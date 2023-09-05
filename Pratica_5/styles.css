@@ -1,0 +1,55 @@
+body {
+    background-image: linear-gradient(to bottom, #007BFF, #0056b3);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.container {
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+.btn-success:hover {
+    background-color: #28a745;
+}
+
+.btn-primary {
+    background-color: #007BFF;
+}
+
+.btn-primary:hover {
+    background-color: #0056b3;
+}
+
+.text-success {
+    color: #28a745 !important;
+}
+
+.text-warning {
+    color: #ffc107 !important;
+}
+
+.text-danger {
+    color: #dc3545 !important;
+}
+
+#message {
+    font-size: 24px;
+}
+
+.progress {
+    height: 30px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+#progressBar {
+    font-size: 18px;
+}
+
+.bg-danger {
+    background-color: #dc3545 !important;
+    color: #fff !important;
+}
