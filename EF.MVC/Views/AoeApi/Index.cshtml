@@ -1,0 +1,38 @@
+﻿
+@{
+    var leaderboards = Model;
+}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>AoE2 Leaderboard</title>
+</head>
+<body>
+    <h1>AoE2 Leaderboard</h1>
+
+    <table class="table table-striped">
+        <thead>
+            <tr>
+                <th>Rank</th>
+                <th>Name</th>
+                <th>Score</th>
+                <th>Profile Image</th>
+                <th>Country Flag</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var leaderboard in leaderboards)
+            {
+                <tr>
+                    <td>@leaderboard.Rank</td>
+                    <td>@leaderboard.Name</td>
+                    <td>@leaderboard.Score</td>
+                    <td><img src="@leaderboard.ProfileImageUrl" /></td>
+                    <td><img src="@leaderboard.CountryFlag" /></td>
+                </tr>
+            }
+        </tbody>
+    </table>
+</body>
+</html>
