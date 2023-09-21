@@ -1,0 +1,33 @@
+﻿
+@model EF.MVC.Models.EmployeeInsertView
+
+@{
+    ViewBag.Title = "Employee page";
+}
+
+<h2>Agregar</h2>
+
+<form action="Insert" method="post" class="needs-validation" novalidate>
+    <div class="row mb-3">
+        <label for="Nombre" class="col-sm-2 col-form-label">Nombre</label>
+        <div class="col-sm-10">
+            <input type="text" class="form-control" id="Nombre" name="Nombre" value="@Model.Nombre" required>
+            <span class="invalid-feedback">El nombre es obligatorio.</span>
+        </div>
+    </div>
+    <div class="row mb-3">
+        <label for="Apellido" class="col-sm-2 col-form-label">Apellido</label>
+        <div class="col-sm-10">
+            <input type="text" class="form-control" id="Apellido" name="Apellido" value="@Model.Apellido" required>
+            <span class="invalid-feedback">El apellido es obligatorio.</span>
+        </div>
+    </div>
+    <div class="row mb-3">
+        <label for="Rol" class="col-sm-2 col-form-label">Rol</label>
+        <div class="col-sm-10">
+            <input type="text" class="form-control" id="Rol" name="Rol" value="@Model.Rol" required>
+            <span class="invalid-feedback">El rol es obligatorio.</span>
+        </div>
+    </div>
+    <button type="submit" class="btn btn-success" style="margin-top:5px;">Guardar</button>
+</form>

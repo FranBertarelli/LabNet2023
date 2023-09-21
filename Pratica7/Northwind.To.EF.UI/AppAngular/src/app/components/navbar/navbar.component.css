@@ -1,0 +1,58 @@
+/* Estilos para el logo */
+.logo {
+  width: 50px; /* Ajusta el ancho del logo  */
+  height: left ; /* Esto mantiene la proporción original del logo */
+  margin-right: 20px; /* Ajusta el margen derecho  */
+}
+
+/* Alinea el logo a la derecha en la barra de navegación */
+.navbar-custom .navbar-brand {
+  margin-left: auto;
+}
+
+/* Estilos para la barra de navegación */
+.navbar-custom {
+  height: 80px; /* Ajusta la altura s*/
+}
+
+a.nav-link.active {
+  color: beige !important;
+}
+
+.navbar-nav {
+  margin-left: -203px;
+  font-size: 21px;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+}
+
+a.nav-link {
+  color: rgb(255, 255, 255);
+}
+
+.navbar-brand {
+  color: white;
+  font-family: 'Fira Sans Extra Condensed', sans-serif;
+  font-family: 'Merienda', cursive;
+}
+
+.navbar {
+  background-color: burlywood !important;
+}
+
+.shadow {
+  box-shadow: var(--bs-box-shadow) !important;
+}
+
+.rounded {
+  border-radius: var(--bs-border-radius);
+}
+
+.navbar-custom .navbar-nav .nav-link {
+  color: black;
+}
+
+/* Cambia el color de fondo del enlace activo */
+.navbar-custom .navbar-nav .nav-link.active {
+  color: white; /* Texto en el enlace activo en blanco */
+}
